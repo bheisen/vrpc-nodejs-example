@@ -1,0 +1,23 @@
+{
+  "name": "vrpc-nodejs-example",
+  "version": "1.0.0",
+  "description": "Example project demonstrating the usage of vrpc",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bheisen/vrpc-nodejs-example.git"
+  },
+  "author": "Burkhard C. Heisen <burkhard.heisen@xsmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bheisen/vrpc-nodejs-example/issues"
+  },
+  "homepage": "https://github.com/bheisen/vrpc-nodejs-example#readme",
+  "dependencies": {
+    "vrpc": "https://050a5e60ecd4fafaa5a311080feb16d12c059c16:x-oauth-basic@github.com/bheisen/vrpc.git"
+  }
+}
