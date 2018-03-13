@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/bheisen/vrpc-nodejs-example#readme",
   "dependencies": {
-    "vrpc": "https://050a5e60ecd4fafaa5a311080feb16d12c059c16:x-oauth-basic@github.com/bheisen/vrpc.git"
+    "vrpc": "1.0.0"
   }
 }
