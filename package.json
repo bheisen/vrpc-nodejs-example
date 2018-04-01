@@ -2,9 +2,9 @@
   "name": "vrpc-nodejs-example",
   "version": "1.0.0",
   "description": "Example project demonstrating the usage of vrpc",
-  "main": "index.js",
+  "bin": "./bin/app.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "./bin/app.js",
     "test": "./node_modules/.bin/mocha test"
   },
   "repository": {

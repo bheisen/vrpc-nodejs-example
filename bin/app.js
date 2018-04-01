@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 'use strict'
 
 const EventEmitter = require('events')
 const Vrpc = require('vrpc')
-const addon = require('./build/Release/vrpc_example')
+const addon = require('../build/Release/vrpc_example')
 
 // Create an instance of a local (native-addon) vrpc factory
 const vrpc = Vrpc(addon)
