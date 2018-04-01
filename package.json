@@ -1,6 +1,6 @@
 {
   "name": "vrpc-nodejs-example",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Example project demonstrating the usage of vrpc",
   "bin": "./bin/app.js",
   "scripts": {
