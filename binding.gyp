@@ -1,6 +1,6 @@
 {
   'variables': {
-    'vrpc_path': '<!(if [ -e ../vrpc ]; then echo ../vrpc; else echo node_modules/vrpc; fi)'
+    'vrpc_path': '<!(if [ -e node_modules/vrpc ]; then echo node_modules/vrpc; else echo ../vrpc; fi)'
   },
   'targets': [
     {
@@ -21,12 +21,10 @@
           # '-lpthread'
         ],
         'ldflags': [  # Linker flags
-          '-Wl,-rpath,\$$ORIGIN' #  Makes us relocatable
           # '-Wl,-rpath,\$$ORIGIN/runtime/path/to/local/lib',
           # '-L<!(pwd)/compiletime/path/to/local/lib'
         ]
       },
-      'libraries': ['-Wl,-rpath,\$$ORIGIN'] #  Makes us relocatable
     }
   ]
 }
