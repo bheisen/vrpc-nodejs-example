@@ -79,7 +79,7 @@ For the binding to work it is important to have a proper `binding.gyp`:
 ```python
 {
   'variables': {
-    'vrpc_path': '<!(if [ -e node_modules/vrpc ]; then echo node_modules/vrpc; else echo ../vrpc; fi)'
+    'vrpc_path': '<!(if [ -e ../vrpc ]; then echo ../vrpc/vrpc; else echo node_modules/vrpc/vrpc; fi)'
   },
   'targets': [
     {
@@ -88,11 +88,11 @@ For the binding to work it is important to have a proper `binding.gyp`:
       'cflags_cc!': ['-std=gnu++0x', '-fno-rtti', '-fno-exceptions'],
       'cflags_cc': ['-std=c++14', '-fPIC'],
       'include_dirs': [  # Include dirs needing to be found
-        '<(vrpc_path)/cpp',
+        '<(vrpc_path)',
         'cpp'
       ],
       'sources': [  # Sources needing to be compiled
-        '<(vrpc_path)/cpp/addon.cpp',
+        '<(vrpc_path)/addon.cpp',
         'cpp/Bar.cpp'
       ],
       'link_settings': {
